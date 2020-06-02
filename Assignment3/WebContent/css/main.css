@@ -1,0 +1,68 @@
+/*
+	Document	: main.css
+	Created on	: Monday. March 23, 2020
+	Author		: Jason Xu 991545529
+	Description	: Styles for assignment 2 (pizza order app)
+*/
+html {
+	background-color: #FCF3CF;
+}
+
+.mainHeader {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+label {
+	display: inline-block;
+	width: 120px;
+}
+
+.gridTop {
+	grid-area: top;
+}
+
+.gridLeft {
+	grid-area: left;
+	border: 3px solid black;
+	padding: 10px;
+}
+
+.gridLeftImage {
+	grid-area: left;
+	border: 3px solid black;
+}
+
+.gridRight {
+	grid-area: right;
+	border: 3px solid black;
+	padding: 10px;
+}
+
+.gridRightImage {
+	grid-area: right;
+	border: 3px solid black;
+}
+
+.grid-container {
+	display: inline-grid;
+	grid-template-areas: 'top top' 'left right';
+	grid-gap: 5px;
+	justify-items: center;
+}
+
+.pizzaOrderItem {
+	padding: 1px;
+	text-align: center;
+}
+
+.pizzaOrderPrice {
+	padding: 1px;
+	text-align: right;
+}
+
+.grid-container-orders {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 3px;
+}

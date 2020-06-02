@@ -1,0 +1,52 @@
+<!-- Welcome page for pizza shop (PROG32758 Assignment 3) -->
+<!-- File: index.html -->
+<!-- Date: April 11, 2020 -->
+<!-- Author: Jason Xu 991545529 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!-- linked css -->
+	<link type='text/css' rel='stylesheet' href='css/main.css'>
+	<title>Welcome!</title>
+</head>
+<body>
+	<!-- Grid container to hold everything user interacts with. -->
+	<div class='grid-container'>
+		<!-- Top of the grid to display the title of the page. -->
+		<div class='gridTop'>
+			<div class='mainHeader'>Welcome to the Pizza Shop!</div>
+		</div>
+		<br>
+		<!-- Left side of grid to show image of a pizza. -->
+		<div class='gridLeftImage'>
+			<img src='images/pepperoniPizzaLeft.jpg'>
+		</div>
+		<!-- Right side of grid for user to input their customer information. -->
+		<!-- All fields are required and phone number and email must be formatted correctly. -->
+		<div class='gridRight'>
+			<form action='AddToOrderController' method='POST'>
+				<h2>Customer Information</h2>
+				<label for='custName'>Name:</label>
+				<input type='text' id='custName' name='custName' required>
+				<br>
+				<label for='custAddress'>Address:</label>
+				<input type='text' id='custAddress' name='custAddress' required>
+				<br>
+				<label for='custPhone'>Phone Number:</label>
+				<input type='tel' id='custPhone' name='custPhone' placeholder='(012) 345-6789' pattern='[(][0-9]{3}[)]\s[0-9]{3}-[0-9]{4}' required>
+				<br>
+				<label for='custEmail'>Email:</label>
+				<input type='email' id='custEmail' name='custEmail' required>
+				<br>
+				<input type='radio' id='custPickUp' name='custDelivery' value='Pick Up' checked>
+				Pick Up
+				<input type='radio' id='custDelivery' name='custDelivery' value='Delivery'>
+				Delivery
+				<br>
+				<input type='submit' value='Begin'>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
